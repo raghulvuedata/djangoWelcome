@@ -19,6 +19,10 @@ load_dotenv()
 
 
 SECRET_KEY = os.getenv('SECRET_KEY')
+name = os.getenv("name")
+age = os.getenv("age")
+# name = "rahul"
+# age = "1"
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -130,3 +134,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Set the default character encoding
+DEFAULT_CHARSET = 'utf-8'
